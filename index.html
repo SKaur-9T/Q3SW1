@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-box">
+        <h1>Temperature Converter</h1>
+
+        <!-- Thermometer Image -->
+        <div class="image-container">
+            <img src="shh.PNG" alt="Thermometer" class="thermometer">
+        </div>
+
+        <p>Convert a given temperature to Celsius, Fahrenheit, and Kelvin.</p>
+
+        <div class="result-box">
+            <p><strong>FAHRENHEIT:</strong> <span id="fahrenheit">20.00</span></p>
+            <p><strong>CELSIUS:</strong> <span id="celsius" class="hidden">-6.67</span></p>
+            <p><strong>KELVIN:</strong> <span id="kelvin" class="hidden">266.48</span></p>
+        </div>
+
+        <!-- Buttons -->
+        <button class="btn btn-primary" onclick="document.getElementById('celsius').classList.remove('hidden')">CELSIUS</button>
+        <button class="btn btn-success" onclick="document.getElementById('kelvin').classList.remove('hidden')">KELVIN</button>
+        <button class="btn btn-warning" onclick="document.getElementById('fahrenheit').classList.remove('hidden')">FAHRENHEIT</button>
+        <button class="btn btn-danger" onclick="window.location.reload();">REFRESH</button>
+
+        <div class="footer">
+            Simrandip Kaur | 9 - Topaz
+        </div>
+    </div>
+
+</body>
+</html>
